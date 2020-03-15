@@ -1,19 +1,8 @@
-import * as Koa from 'koa';
-import * as Router from 'koa-router';
+import { app } from './app';
 import * as config from 'config';
-//import config from 'config';
-process.env['NODE_CONFIG_DIR'] = __dirname + '/config/';
 
-const app = new Koa();
-const router = new Router();
+const port = config.get('server.port');
 
-router.get('/*', async ctx => {
-  ctx.body = 'Hello World!';
+app.listen(port, () => {
+	console.log(`App is running on ${port}`);
 });
-
-app.use(router.routes());
-
-app.listen(3000);
-console.log(config.get('secret'));
-
-console.log('Server running on port 3000');
