@@ -1,11 +1,14 @@
-import * as Koa from 'koa';
-import * as Router from 'koa-router';
+import Koa from 'koa';
+import Router from 'koa-router';
 import { init as loggerInit } from './middleware/logger';
 
 export const app = new Koa();
 const router = new Router();
 
-router.get('/*', async ctx => {
+// middlewares
+loggerInit(app);
+
+router.get('/*', async (ctx: Koa.Context) => {
 	ctx.body = 'Hello World!';
 });
 

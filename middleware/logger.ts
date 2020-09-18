@@ -1,6 +1,6 @@
 // request/response logger
-import * as logger from '../libs/logger';
 import * as Koa from 'koa';
+import { logger } from '../libs/logger';
 
 export const init = (app: Koa) =>
 	app.use((ctx: Koa.Context, next: Koa.Next) => {

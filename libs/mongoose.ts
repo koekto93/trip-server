@@ -1,6 +1,7 @@
-import * as mongoose from 'mongoose';
-import * as beautifyUnique from 'mongoose-beautiful-unique-validation';
-import * as config from 'config';
+import mongoose from 'mongoose';
+// @ts-ignore
+import beautifyUnique from 'mongoose-beautiful-unique-validation';
+import config from 'config';
 
 mongoose.set('debug', config.get('mongodb.debug'));
 mongoose.plugin(beautifyUnique);

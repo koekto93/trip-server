@@ -29,6 +29,7 @@
     "@types/mongodb": "^3.5.2",
     "@types/mongoose": "^5.7.6",
     "@types/redis": "^2.8.16",
+    "@types/winston": "^2.4.4",
     "mongoose-beautiful-unique-validation": "^7.1.1",
     "nodemon": "^2.0.2",
     "ts-node": "^8.6.2",
