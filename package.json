@@ -18,7 +18,7 @@
     "koa-router": "^8.0.8",
     "mongodb": "^3.5.5",
     "mongoose": "^5.9.4",
-    "redis": "^3.0.2",
+    "redis": "^3.1.1",
     "winston": "^3.2.1"
   },
   "devDependencies": {
