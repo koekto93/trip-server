@@ -10,7 +10,7 @@
   "author": "Mark Ulybkin <koekto93@mail.ru>",
   "license": "ISC",
   "dependencies": {
-    "config": "^3.3.0",
+    "config": "^3.3.8",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
     "koa-json": "^2.0.2",
